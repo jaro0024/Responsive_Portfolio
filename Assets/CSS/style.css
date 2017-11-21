@@ -1,5 +1,4 @@
 
-/* My screen size is 1920 x 1080. I was not able to figure out how to do responsive design. */
 
 * {
     box-sizing: border-box;
@@ -131,13 +130,13 @@ h1, h2, h3 {
     margin: 40px 100px 130px 200px;
 }
 
-.project {
-    width: 290px;
-    height: 200px;
+.project, .project img {
     overflow: hidden;
     position: relative;
     float: left;  
-    padding: 10px;
+    padding: 5px;
+    width: 290px;
+    height: 200px;
 }
 
 .imgtitle {
@@ -240,6 +239,8 @@ h1, h2, h3 {
 
 /* ------------------------ */
 
+/* Media Queries */
+
 @media screen and (max-width: 980px) {
     
     html {
@@ -272,7 +273,7 @@ h1, h2, h3 {
     .myimg {
         float: none;
         margin-bottom: 10px;
-        width: 350px;
+        width: 380px;
         height: auto;
     }
 
@@ -280,20 +281,21 @@ h1, h2, h3 {
         width: 420px;
         height: auto;
         margin: 40px 40px 130px 70px;
+        padding: 10px 25px 10px 25px;
     }
 
-    .project {
-        width: 350px;
+    .project, .project img {
+        float: none;
+        width: 380px;
         height: auto;
-        float: none;  
-        padding: 20px 20px 20px 30px;
+        padding: 10px 10px 10px 0;
     }
-
+       
     .imgtitle {
         position: absolute;
-        top: 200px;
-        left: 30px; 
-        width: 300px;      
+        top: 260px;
+        left: 0; 
+        width: 370px;      
     }
    
     .connect {
@@ -342,21 +344,21 @@ h1, h2, h3 {
         width: 708px;
         height: auto;
         margin: 40px 20px;
-        padding: 20px 30px;
+        padding: 20px 20px 20px 30px;
     }
 
-    .project {
+    .project, .project img {
         width: 320px;
         height: auto;;
         float: left;  
-        padding: 20px 40px 20px 10px;
+        padding: 10px 5px 5px 5px;
     }
 
     .imgtitle {
         position: absolute;
-        top: 200px;
+        top: 210px;
         left: 10px; 
-        width: 300px;      
+        width: 320px;      
     }
    
     .connect {
@@ -418,25 +420,21 @@ h1, h2, h3 {
         width: 580px;
         height: auto;
         margin: 40px 20px;
-        padding: 20px 40px 20px 20px;
+        padding: 20px 30px;
     }
 
-    .project {
+    .project, .project img {
         float: none;  
-        padding: 20px 0 20px 0;
-    }
-
-    .project img {
-        width: 560px;
-        height: 350px;
-        
+        width: 520px;
+        height: auto;
+        padding: 10px 0 20px 0;
     }
 
     .imgtitle {
         position: absolute;
-        top: 300px;
+        top: 380px;
         left: 0; 
-        width: 320px;      
+        width: 520px;      
     }
    
     .connect {
@@ -446,4 +444,5 @@ h1, h2, h3 {
     }
     
 } 
-    
+
+/* ------------------------ */
