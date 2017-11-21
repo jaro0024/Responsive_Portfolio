@@ -240,7 +240,7 @@ h1, h2, h3 {
 
 /* Media Queries */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) and (min-width: 769px) {
     
     html {
         overflow-x: hidden;
@@ -303,7 +303,7 @@ h1, h2, h3 {
     
 } 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 641px) {
     
     html {
         overflow-x: hidden;
@@ -385,7 +385,8 @@ h1, h2, h3 {
     }
 
     .header nav {
-       text-align: center;
+        text-align: center;
+        width: 100%;
     }
 
     .header nav ul {
