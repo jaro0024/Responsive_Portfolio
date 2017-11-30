@@ -129,7 +129,7 @@ h1, h2, h3 {
     margin: 40px 100px 130px 200px;
 }
 
-.project, .project img {
+.project {
     overflow: hidden;
     position: relative;
     float: left;  
